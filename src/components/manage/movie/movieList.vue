@@ -1,6 +1,6 @@
 <template>
 	<div>
-     <h1>电影列表</h1>
+     <h2 class="add">电影列表</h2>
         <el-table
             :data="dataAry"
             border>
@@ -46,16 +46,16 @@
             </el-table-column>
   </el-table>
         <div class="block">
-                    <el-pagination
-                      @size-change="handleSizeChange"
-                      @current-change="handleCurrentChange"
-                      :current-page="curPage1"
-                      :page-sizes="[10,20, 30,40,50, 60,70,80,90,100]"
-                      :page-size="page.eachPage"
-                      layout="total, sizes, prev, pager, next, jumper"
-                      :total="page.count">
-                    </el-pagination>
-  </div>
+            <el-pagination
+              @size-change="handleSizeChange"
+              @current-change="handleCurrentChange"
+              :current-page="curPage1"
+              :page-sizes="[10,20, 30,40,50, 60,70,80,90,100]"
+              :page-size="page.eachPage"
+              layout="total, sizes, prev, pager, next, jumper"
+              :total="page.count">
+            </el-pagination>
+        </div>
     </div>
 </template>
 <script type="text/javascript">
@@ -126,3 +126,11 @@ export default{
         }
 }
 </script>
+<style scoped>
+  .add{
+    margin: 0px;
+    color: #ffffff;
+    background-color:#999999 ;
+    padding: 8px;
+}
+</style>

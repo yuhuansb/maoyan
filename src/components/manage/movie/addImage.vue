@@ -1,6 +1,6 @@
  <template>
-<div style="margin-left:20px;">
-  <h1>上传图片</h1>
+<div style="margin-left:20px; width:100%;">
+  <h2 class="add">上传图片</h2>
   <div>
     <el-radio class="radio" v-model="radio" label="1">主页图片</el-radio>
     <el-radio class="radio" v-model="radio" label="2">剧情图片</el-radio>
@@ -106,3 +106,12 @@
     }
   }
 </script>
+<style scoped>
+    .add{
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    background-color:#999999 ;
+    padding: 8px;
+}
+</style>

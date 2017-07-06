@@ -11,7 +11,7 @@
     </el-pagination>
   </div>
 </template>
-<script>
+<script scoped>
   export default {
     // created(){
     //   console.log(this.pages)
