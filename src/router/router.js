@@ -8,6 +8,7 @@ import manage from "../components/manage/manage.vue"
 import addEmp from "../components/manage/emp/addEmp.vue"
 import empList from "../components/manage/emp/empList.vue"
 import addMovie from "../components/manage/movie/addMovie.vue"
+import addImage from "../components/manage/movie/addImage.vue"
 import movieList from "../components/manage/movie/movieList.vue"
 import addStudio from "../components/manage/studio/addStudio.vue"
 import studioList from "../components/manage/studio/studioList.vue"
@@ -41,6 +42,14 @@ export default new Router({
 			path: "/manage/movie/addMovie",
 			name: "addMovie",
 			component: addMovie
+		}, {
+			path: "/manage/movie/addMovie/:row",
+			name: "addMovie",
+			component: addMovie
+		}, {
+			path: "/manage/movie/addImage/:movieId",
+			name: "addImage",
+			component: addImage
 		}, {
 			path: "/manage/movie/movieList",
 			name: "movieList",
