@@ -8,11 +8,12 @@ import 'element-ui/lib/theme-default/index.css'
 // console.log(store)
 
 new Vue({
-	el: '#app',
-	router,
-	store,
-	template: '<wrap/>',
-	components: {
-		wrap
-	}
+    el: '#app',
+    router,
+    store,
+    template: '<wrap/>',
+    components: {
+        wrap
+    }
 })
+console.log(store)
